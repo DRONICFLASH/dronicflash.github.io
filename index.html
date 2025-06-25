@@ -8,7 +8,7 @@
     body {
       margin: 0;
       padding: 0;
-      background: radial-gradient(circle at center, #0f172a, #000);
+      background: radial-gradient(circle at center, #0f172a, #000000);
       color: #ffffff;
       font-family: 'Segoe UI', sans-serif;
       display: flex;
@@ -17,37 +17,43 @@
       justify-content: center;
       height: 100vh;
       text-align: center;
+      overflow: hidden;
     }
+
     img {
-      width: 220px;
+      width: 240px;
       height: auto;
       margin-bottom: 30px;
-      filter: drop-shadow(0 0 10px #00f0ff);
+      filter: drop-shadow(0 0 15px #00f0ff);
       animation: float 3s ease-in-out infinite;
     }
+
     h1 {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       margin-bottom: 0.5rem;
       color: #00f0ff;
+      text-shadow: 0 0 10px #00f0ff;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ffffff;
+      opacity: 0.9;
       text-shadow: 0 0 5px #00f0ff;
     }
-    p {
-      font-size: 1.1rem;
-      opacity: 0.8;
-      color: #ffffff;
-    }
+
     @keyframes float {
       0%, 100% {
         transform: translateY(0);
       }
       50% {
-        transform: translateY(-10px);
+        transform: translateY(-12px);
       }
     }
   </style>
 </head>
 <body>
-  <img src="https://i.imgur.com/NqUwnLS.png" alt="Dronic Flash Logo" />
+  <img src="https://raw.githubusercontent.com/ansh-gpt/dronic-assets/main/dronic-logo-3d.png" alt="Dronic Flash Logo" />
   <h1>Dronic Flash</h1>
   <p>Always fly like your dream 💟</p>
 </body>
