@@ -11,50 +11,86 @@
       background: radial-gradient(circle at center, #0f172a, #000000);
       color: #ffffff;
       font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
       text-align: center;
-      overflow: hidden;
+      line-height: 1.6;
     }
 
     img {
-      width: 260px;
-      height: auto;
-      margin-bottom: 30px;
+      width: 220px;
+      margin-top: 40px;
       filter: drop-shadow(0 0 15px #00f0ff);
       animation: float 3s ease-in-out infinite;
     }
 
     h1 {
-      font-size: 2.4rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
       color: #00f0ff;
+      margin: 0.5rem 0;
       text-shadow: 0 0 10px #00f0ff;
     }
 
+    h2 {
+      margin-top: 50px;
+      color: #00f0ff;
+    }
+
     p {
-      font-size: 1.2rem;
-      color: #ffffff;
-      opacity: 0.9;
-      text-shadow: 0 0 5px #00f0ff;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .section {
+      margin: 50px 0;
+    }
+
+    a {
+      color: #00f0ff;
+      text-decoration: none;
     }
 
     @keyframes float {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-12px);
-      }
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
     }
+
   </style>
 </head>
 <body>
   <img src="logo.gif" alt="Dronic Flash Logo" />
   <h1>Dronic Flash</h1>
-  <p>Always fly like your dream 💟</p>
+  <p><em>Always fly like your dream 💟</em></p>
+
+  <div class="section">
+    <h2>About Us</h2>
+    <p>
+      Dronic Flash is an advanced tech company founded to build cutting-edge drones and defense systems.
+      Our mission is to empower the future with autonomous, intelligent machines designed for safety, innovation, and vision.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Founder</h2>
+    <p>
+      <strong>Ansh</strong>, the founder of Dronic Flash, is a visionary tech innovator dedicated to developing futuristic drones, AI systems, and advanced defense technologies. With a mission-driven mindset and unstoppable passion, he leads the company toward a smarter and safer world.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>What We Build</h2>
+    <p>
+      • Ultra Focus Camera & Safari Drones<br>
+      • Marriage/Event Drones<br>
+      • Agricultural Drones<br>
+      • Army & Defense Drones<br>
+      • AI-integrated weapon systems<br>
+      • Future-ready autonomous robotics
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Contact</h2>
+    <p>Email us at: <a href="mailto:dronicflash@gmail.com">dronicflash@gmail.com</a></p>
+  </div>
 </body>
 </html>
