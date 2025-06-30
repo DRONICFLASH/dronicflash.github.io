@@ -30,6 +30,24 @@
   </section>
   <title>Marriage Drones - Dronic Flash</title>
   <style>
+    <style>
+.drone-animation {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+#marriageDrone {
+  position: absolute;
+  top: 20px;
+  left: -200px;
+  width: 160px;
+  transition: left 2s ease-in-out;
+}
+#marriageDrone.fly-in {
+  left: 50%;
+  transform: translateX(-50%);
+}
+</style>
     body {
       background-color: #0a192f;
       color: white;
@@ -53,6 +71,9 @@
   </style>
 </head>
 <body>
+  <div class="drone-animation">
+  <img src="file_00000000ef4c6230a80fc8aca4258845.png" alt="Marriage Drone" id="marriageDrone" />
+  </div>
   <section id="marriage-drone" style="text-align: center; padding: 60px 20px; background-color: #fef9f9;">
   <h2 style="font-size: 2.5em; margin-bottom: 20px;">Marriage Drone</h2>
 
@@ -90,4 +111,12 @@
   <br><br>
   <a href="index.html" style="color: #00f0ff;">← Back to Home</a>
 </body>
+  <script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const drone = document.getElementById("marriageDrone");
+    setTimeout(() => {
+      drone.classList.add("fly-in");
+    }, 500);
+  });
+  </script>
 </html>
