@@ -3,6 +3,23 @@
 <head>
   <title>Safari Drones - Dronic Flash</title>
   <style>
+    <style>
+  .drone-animation {
+    width: 200px;
+    animation: flyIn 2s ease-in-out;
+  }
+
+  @keyframes flyIn {
+    from {
+      transform: translateX(-100vw);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+</style>
     <head>
   ...
   <style>
