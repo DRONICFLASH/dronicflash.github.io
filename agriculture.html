@@ -29,6 +29,31 @@
       
   </style>
 </head>
+  <style>
+.drone-fly {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  animation: flyUp 3s ease-out forwards;
+}
+
+@keyframes flyUp {
+  0% {
+    bottom: -100px;
+    opacity: 0;
+  }
+  50% {
+    bottom: 150px;
+    opacity: 1;
+  }
+  100% {
+    bottom: 100px;
+    opacity: 1;
+  }
+}
+  </style>
 <body>
   <h1>🌾 Agriculture Drones</h1>
 
@@ -40,5 +65,6 @@
   <br><br>
   <a href="index.html" style="color: #00f0ff;">← Back to Home</a>
 </body>
+  <img src="file_00000000460061fdb081946aa1d32dc6.png" class="drone-fly" alt="Agriculture Drone">
 <
   /html>
