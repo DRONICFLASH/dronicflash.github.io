@@ -1,131 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta name="google-site-verification" content="9Nkff40Xz_NteyLMDSWTyAwshvGUfy3WbeS-6D88LfU" /> 
-  <title>Dronic Flash | Always Fly Like Your Dream</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dronic Flash - Advanced Drone Tech</title>
   <style>
     body {
-     <img src="file_00000000850861f8ac3740dd020b7ec3.png" alt="Dronic Flash Logo" width="150" style="display:block; margin: 20px auto;">
-     <div style="text-align: center; margin-top: 20px;">
-  <img src="file_00000000850861f8ac3740dd020b7ec3.png" alt="Dronic Flash Logo" width="150">
-</div>
       margin: 0;
-      background: radial-gradient(circle at top, #0a192f, #000);
-      color: white;
       font-family: 'Segoe UI', sans-serif;
-      text-align: center;
+      background-color: #0a192f;
+      color: white;
+    }
+
+    header {
+      background-color: #061323;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .logo {
-      margin-top: 30px;
-    }
-
-    .logo img {
-      width: 200px;
-      filter: drop-shadow(0 0 15px #00f0ff);
-    }
-
-    h1 {
-      font-size: 2.5rem;
+      font-size: 1.8em;
       color: #00f0ff;
-      text-shadow: 0 0 15px #00f0ff;
-      margin: 20px 0 10px;
-    }
-
-    p.slogan {
-      font-size: 1.2rem;
-      color: #ddd;
-      margin-bottom: 40px;
-    }
-
-    .section-buttons a {
-      display: inline-block;
-      margin: 15px;
-      padding: 15px 25px;
-      background: transparent;
-      border: 2px solid #00f0ff;
-      color: #00f0ff;
-      text-decoration: none;
-      border-radius: 10px;
       font-weight: bold;
-      transition: all 0.3s ease;
     }
 
-    .section-buttons a:hover {
-      background: #00f0ff;
-      color: #0a192f;
-      box-shadow: 0 0 15px #00f0ff;
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
     }
 
-    .about {
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.05);
-      border-radius: 15px;
+    nav a:hover {
+      color: #00f0ff;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #000428, #004e92);
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .drone {
+      width: 150px;
+      animation: flyin 2s ease-out forwards;
+      position: relative;
+    }
+
+    @keyframes flyin {
+      0% {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .gallery img {
+      width: 220px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 240, 255, 0.2);
     }
 
     footer {
-      margin-top: 60px;
-      color: #888;
-      font-size: 0.9rem;
+      background-color: #061323;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
-  <div class="logo">
-    <img src="logo.gif" alt="Dronic Flash Logo">
-  </div>
+  <header>
+    <div class="logo">Dronic Flash</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Drones</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <h1>Welcome to Dronic Flash</h1>
-  <p class="slogan">Always Fly Like Your Dream 🚀</p>
+  <section class="hero" id="home">
+    <h1>Welcome to Dronic Flash</h1>
+    <p>Powering the skies with innovation 🚀</p>
+    <img class="drone" src="file_00000000b4f8622f9a2e46ad0b8b24be.png" alt="Flying Drone" />
+  </section>
 
-  <div class="section-buttons">
-    <a href="marriage.html">Marriage Drones</a>
-    <a href="safari.html">Safari / Ultra Camera Drones</a>
-    <a href="agriculture.html">Agriculture Drones</a>
-    
-  </div>
+  <section id="products">
+    <h2>Our Drone Categories</h2>
+    <p>Explore the power of technology:</p>
+    <div class="gallery">
+      <img src="file_00000000460061fdb081946aa1d32dc6.png" alt="Agriculture Drone" />
+      <img src="file_00000000b4f8622f9a2e46ad0b8b24be.png" alt="Safari Drone" />
+      <img src="file_00000000814461f789fdaae3d6976cbc.png" alt="Marriage Drone" />
+    </div>
+  </section>
 
-  <div class="about">
-    <h2>About Dronic Flash</h2>
-    <p>
-     Dronic Flash is a rising drone technology company focused on transforming modern events, agriculture, and wildlife exploration with intelligent drone systems.</p>
-  <p>We are also researching next-generation technologies with potential applications in national security and advanced surveillance systems for future expan
-    </p>
-  </div>
+  <section id="gallery">
+    <h2>Drone Gallery</h2>
+    <p>Take a closer look at our advanced machines</p>
+    <div class="gallery">
+      <img src="images/drone1.jpg" alt="Drone Pic 1" />
+      <img src="images/drone2.jpg" alt="Drone Pic 2" />
+      <img src="images/drone3.jpg" alt="Drone Pic 3" />
+      <img src="images/drone4.jpg" alt="Drone Pic 4" />
+      <img src="images/drone5.jpg" alt="Drone Pic 5" />
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email us at <strong>dronicflash@gmail.com</strong> for queries and support.</p>
+  </section>
 
   <footer>
-    &copy; 2025 Dronic Flash. All rights reserved.
+    © 2025 Dronic Flash | Powered by Genius Ansh
   </footer>
 
 </body>
-  <!-- Default Statcounter code for My business website
-https://dronicflash.github.io -->
-<script type="text/javascript">
-var sc_project=13146921; 
-var sc_invisible=1; 
-var sc_security="059c90c1"; 
-</script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js" async></script>
-<noscript><div class="statcounter"><a title="Web Analytics"
-href="https://statcounter.com/" target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/13146921/0/059c90c1/1/" alt="Web Analytics"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-<!-- End of Statcounter Code -->
- <body>
-  <section id="contact" style="padding: 40px; background-color: #f4f4f4;">
-  <h2 style="text-align: center; font-size: 2em;">Contact Us</h2>
-  <p style="text-align: center; font-size: 1.1em; margin-top: 10px;">
-    📧 You can reach us at: <a href="mailto:dronicflash@gmail.com">dronicflash@gmail.com</a>
-  </p>
-  </section>
-  
- </body>
 </html>
-
-  
-
-
